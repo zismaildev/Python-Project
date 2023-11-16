@@ -33,10 +33,28 @@ while True:
 
             elif squares == 2:
                 print("Your Select หาพื้นที่สี่เหลี่ยมผืนผ้า")
+                wide = int(input("Enter Your wide : "))
+                long = int(input("Enter Your long : "))
+
+                area2 = wide * long
+                
+                print(area2)
+
             elif squares == 3:
                 print("ํYour Select หาพื้นที่สี่เหลี่ยมด้านขนาน")
+                wide = int(input("Enter Your base : "))
+                width = int(input("Enter Your Width : "))
+
+                area3 = width * base
+                
+                print(area3)
             elif squares == 4:
                 print("ํYour Select หาพื้นที่สี่เหลี่ยมขนมเปียกปูน")
+                diagonal = int(input("Enter Your Diagonal"))
+
+                area4 = diagonal * 0.5
+                print(area4)
+
             elif squares == 0:
                 break  # ย้อนกลับไปที่เมนูหลัก
             else:
