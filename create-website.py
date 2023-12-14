@@ -32,7 +32,7 @@ def setup_nextjs(project_name):
     # Create 'contents' folder in 'my-app\src\pages'
     os.makedirs("src/pages/contents", exist_ok=True)
 
-    subprocess.run(["cmd", "/c", "pnpm", "add", "@nextui-org/theme", "@nextui-org/system", "framer-motion"])
+    subprocess.run(["cmd", "/c", "pnpm", "add", "@nextui-org/theme", "@nextui-org/system", "@nextui-org/react", "framer-motion"])
 
     with open(".npmrc", "w") as npmrc_file:
         npmrc_file.write("public-hoist-pattern[]=*@nextui-org/*\n")
